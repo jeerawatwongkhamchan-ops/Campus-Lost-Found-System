@@ -1,0 +1,14 @@
+{
+  "name": "campus-lost-found-system",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/input.css -o ./public/assets/css/app.css --watch",
+    "build": "tailwindcss -i ./src/input.css -o ./public/assets/css/app.css --minify",
+    "test": "docker compose exec -T web php tests/run.php"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
+}
